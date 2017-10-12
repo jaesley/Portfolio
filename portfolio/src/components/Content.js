@@ -16,33 +16,25 @@ class Content extends Component {
   render() {
     if ( this.state.currentPage == 'home' ) {
       return (
-        <div>
-          <Home />
-        </div>
+        <Home />
       );
     };
 
     if ( this.state.currentPage == 'resume' ) {
       return (
-        <div>
-          <Resume />
-        </div>
+        <Resume />
       );
     };
 
     if ( this.state.currentPage == 'portfolio' ) {
       return (
-        <div>
-          <Portfolio />
-        </div>
+        <Portfolio />
       );
     };
 
     if ( this.state.currentPage == 'contact' ) {
       return (
-        <div>
-          <Contact />
-        </div>
+        <Contact />
       );
     };
   };

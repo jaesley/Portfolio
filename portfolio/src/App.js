@@ -1,52 +1,25 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Contact from './components/Contact.js';
-import Home from './components/Home.js';
-import Portfolio from './components/Portfolio.js';
-import Resume from './components/Resume.js';
+import Content from './components/Content.js';
+import Nav from './components/Nav.js';
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      currentPage: 'home'
-    };
-  };
+
 
 
   render() {
-    if ( this.state.currentPage == 'home' ) {
-      return (
+    return (
+      <div>
         <div>
-          <Home />
+          <Nav />
         </div>
-      );
-    };
 
-    if ( this.state.currentPage == 'resume' ) {
-      return (
         <div>
-          <Resume />
+          <Content />
         </div>
-      );
-    };
-
-    if ( this.state.currentPage == 'portfolio' ) {
-      return (
-        <div>
-          <Portfolio />
-        </div>
-      );
-    };
-
-    if ( this.state.currentPage == 'contact' ) {
-      return (
-        <div>
-          <Contact />
-        </div>
-      );
-    };
+      </div>
+    );
   };
 };
 

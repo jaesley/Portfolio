@@ -14,7 +14,7 @@ class App extends Component {
     };
   };
 
-  onNavClick(event) {
+  onNavClick() {
     this.setState({
       currentPage: 'Resume'
     });

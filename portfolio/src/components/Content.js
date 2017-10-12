@@ -6,33 +6,26 @@ import Portfolio from './Portfolio.js';
 import Resume from './Resume.js';
 
 class Content extends Component {
-  constructor() {
-    super();
-    this.state = {
-      currentPage: 'home'
-    };
-  };
-
   render() {
-    if ( this.state.currentPage == 'home' ) {
+    if ( this.props.currentPage === 'Home' ) {
       return (
         <Home />
       );
     };
 
-    if ( this.state.currentPage == 'resume' ) {
+    if ( this.props.currentPage === 'Resume' ) {
       return (
         <Resume />
       );
     };
 
-    if ( this.state.currentPage == 'portfolio' ) {
+    if ( this.props.currentPage === 'Portfolio' ) {
       return (
         <Portfolio />
       );
     };
 
-    if ( this.state.currentPage == 'contact' ) {
+    if ( this.props.currentPage === 'Contact' ) {
       return (
         <Contact />
       );

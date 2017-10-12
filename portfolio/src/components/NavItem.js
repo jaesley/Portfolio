@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class NavItem extends Component {
   render() {
     return (
-      <div className='NavItem'>
+      <div className='NavItem' onClick={this.props.onNavClick} >
         {this.props.text}
       </div>
     );

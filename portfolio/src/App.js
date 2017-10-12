@@ -7,17 +7,25 @@ import Nav from './components/Nav.js';
 class App extends Component {
   constructor() {
     super();
+    this.onNavClick = this.onNavClick.bind(this);
+
     this.state = {
       currentPage: 'Home'
-    }
-  }
+    };
+  };
+
+  onNavClick(event) {
+    this.setState({
+      currentPage: 'Resume'
+    });
+  };
 
   render() {
     return (
       <div>
-        <Nav />
+        <Nav onNavClick={this.onNavClick} />
 
-        <Content currentPage='Home'/>
+        <Content currentPage={this.state.currentPage} />
       </div>
     );
   };

@@ -6,10 +6,10 @@ class Nav extends Component {
   render() {
     return (
       <div className='Nav'>
-        <NavItem text='Home' />
-        <NavItem text='Resume' />
-        <NavItem text='Portfolio' />
-        <NavItem text='Contact' />
+        <NavItem text='Home' onNavClick={this.props.onNavClick} />
+        <NavItem text='Resume' onNavClick={this.props.onNavClick} />
+        <NavItem text='Portfolio' onNavClick={this.props.onNavClick} />
+        <NavItem text='Contact' onNavClick={this.props.onNavClick} />
       </div>
     );
   };

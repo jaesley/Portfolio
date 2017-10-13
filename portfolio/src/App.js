@@ -22,7 +22,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className='App'>
         <Nav onNavClick={this.onNavClick} />
 
         <Content currentPage={this.state.currentPage} />

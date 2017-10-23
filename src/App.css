@@ -1,12 +1,16 @@
 body {
   background-color: black;
-  height: 100%;
+  height: 100vh;
 }
 
 .App {
   background-color: white;
   width: 60%;
   margin: 0 auto;
+  height: 100vh;
+}
+
+.Home {
 }
 
 .Nav {
@@ -27,4 +31,13 @@ body {
 .title {
   text-align: center;
   font-size: larger;
+}
+
+.image {
+  height: 50vh;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  float: left;
+  margin-right: 10px;
+  margin-left: 25px;
 }

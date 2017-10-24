@@ -4,40 +4,40 @@ class Resume extends Component {
   render() {
     return (
       <div className='Resume'>
-        
-        JAE EASLEY
- Software Developer
- jaesley@gmail.com
- Seattle, Washington
- 256-504-2282
- github.com/jaesley
-linkedin.com/in/jaesley
-When I ran bookstores, I always imagined myself living in a book. I just didn't realize that
-book would be Cracking the Coding Interview. My life as a web developer started with
-mastering Excel and Mediawiki for building better tabletop games; now my hobbies include
-creating web apps to nd
-me new book releases and lobbying Spotify to bring back artist
-location in their API. When I'm not coding, you can nd
-me touring all Seattle's dog parks and
-concert venues. I'll be the one on the front row.
-Head of Business Development 08/2017 - present
-Cogrammers, Seattle, Washington
-Community-oriented, non-prot
-learning platform to train the next generation of nontraditional
-programmers. Founding member; leads team of 3-4 reports to develop student
-models and design organization branding.
-Student 03/2017 – 08/2017
-Dev Bootcamp, Seattle, Washington
-Eighteen-week program devoted to an immersive web development curriculum based around
-Javascript, Ruby, and Rails, with a focus on test-driven development, pair programming, Agile
-workow,
-and self-directed learning.
-Merchandise Manager 03/2013 – 01/2017
-Barnes & Noble, Seattle, Washington
-Oversaw 3 of highest-grossing departments to sales increases year over year, including
-directing 3 department leads and 35 store employees daily. Achieved expansion of store
-buying power through data analysis to capitalize on immediate sales trends. Transitioned to
-higher volume store within company due to previous successes, July 2015.
+
+<main id='resume'>
+  <section id='recent-experience'>
+    <h2>Recent Experience</h2>
+    <section id='cogrammers' class='experience'>
+      <h3 class='organization'>Cogrammers</h3>
+      <h4 class='title'>Head of Business Development</h4>
+      <h5 class='dates'>Aug 2017 - Present</h5>
+      <p>
+        Community-oriented, all-volunteer, non-profit learning platform for developers to share their knowledge base with new programmers and to continue their own personal development in both technical and interpersonal skills.
+      </p>
+    </section>
+
+    <section id='dev-bootcamp' class='experience'>
+      <h3 class='organization'>Dev Bootcamp</h3>
+      <h4 class='title'>Student Developer</h4>
+      <h5 class='dates'>May 2017 - Aug 2017</h5>
+      <p>
+        Eighteen-week program devoted to immersive web development curriculum based around Javascript, Ruby, and Rails, with a focus on test-driven development and pair programming within an Agile framework. Developed extensively in Ruby via Rails and Sinatra, and in Javascript via jQuery, React.js, Node.js, and Express.
+      </p>
+    </section>
+
+    <section id='barnes-noble' class='experience'>
+      <h3 class='organization'>Barnes & Noble</h3>
+      <h4 class='title'>Merchandise Manager</h4>
+      <h5 class='dates'>Mar 2013 - Jan 2017</h5>
+      <p>
+        Oversaw 2 of the highest grossing departments of store, including 3 department leads and 35 store employees. Met and exceeded sales plan for prior fiscal year, including out-performing the previous fiscal year. Position duties included optimizing in-store merchandising to best drive sales and conform to company-wide standards and directives; training current and new employees on proper procedures for merchandising, cash handling, and customer service. As manager on duty, oversaw open and close of store; prioritized and delegates\d employee tasks based on current store needs; mediated employee conflicts; ensured proper revenue handling and customer service techniques to minimize company loss; and responded to customer concerns, complaints, and emergencies, providing feedback to higher management as necessary on possible or ongoing issues. 
+      </p>
+    </section>
+  </section>
+</main>
+
+
 Web Development 03/2017 – 08/2017
 Dev Bootcamp, Seattle, Washington
 Immersive web development program.

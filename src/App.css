@@ -19,14 +19,6 @@
   background-color: #B3D2FF;
 }
 
-.Nav {
-  background-color: silver;
-  text-align: right;
-  height: 5vh;
-  margin: auto;
-  vertical-align: center;
-}
-
 .NavItem {
   display: inline-block;
   padding: 10px;
@@ -51,7 +43,7 @@ h2 {
 
 .image {
   height: 50vh;
-  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
   margin-right: 10px;
 }
 
@@ -59,4 +51,18 @@ h2 {
   text-align: right;
   margin-top: 10px;
   margin-right: 50px;
+}
+
+.nav {
+  margin: auto;
+}
+
+.nav section {
+  display: inline-block;
+  float: right;
+}
+
+h1 {
+  display: inline-block;
+  float: left;
 }

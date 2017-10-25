@@ -7,7 +7,7 @@ class Resume extends Component {
 
 <main id='resume'>
   <section id='recent-experience'>
-    <h2>Recent Experience</h2>
+    <h2 class='resume-section'>Recent Experience</h2>
     <section id='cogrammers' class='experience'>
       <h3 class='organization'>Cogrammers</h3>
       <h4 class='title'>Head of Business Development</h4>
@@ -35,16 +35,30 @@ class Resume extends Component {
       </p>
     </section>
   </section>
+
+  <section id='recent-education'>
+    <h2 class='resume-section'>Recent Education</h2>
+    <section id='dbc' class='education'>
+      <h3 class='organization'>Dev Bootcamp</h3>
+      <h4 class='title'>Web Development</h4>
+      <h5 class='dates'>Mar 2017 - Aug 2017</h5>
+      <p>
+        Immersive web development program.
+      </p>
+    </section>
+
+    <section id='alabama' class='education'>
+      <h3 class='organization'>University of Alabamap</h3>
+      <h4 class='title'>BA English</h4>
+      <h5 class='dates'>Mar 2017 - Aug 2017</h5>
+      <p>
+        Summa cum laude; 4.0 GPA<br />
+        Thomas Wolfe Award for Best Student Writer
+      </p>
+    </section>
+  </section>
 </main>
 
-
-Web Development 03/2017 – 08/2017
-Dev Bootcamp, Seattle, Washington
-Immersive web development program.
-English Literature 08/2005 – 05/2009
-University of Alabama, Tuscaloosa, Alabama
-Summa cum laude; 4.0 GPA
-Thomas Wolfe Award for Best Student Writer
 Ruby
 Ruby Rspec
 Rails Sinatra

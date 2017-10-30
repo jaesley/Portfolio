@@ -3,8 +3,7 @@ import './App.css';
 
 import Content from './components/Content.js';
 import Footer from './components/Footer.js';
-import NavItem from './components/NavItem.js';
-import { Navbar, Nav, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, Jumbotron, Grid, Row, Col, Button   } from 'react-bootstrap';
 
 class App extends Component {
   constructor() {
@@ -45,25 +44,32 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
+  <Grid>
+    <Row>
+      <Col xs={12}>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
         <Navbar>
           <Navbar.Header>
             <Navbar.Brand>
               Jae Easley
             </Navbar.Brand>
+            <Navbar.Toggle />
           </Navbar.Header>
-          <Nav>
-            <NavItem eventKey={1} href="#">Link</NavItem>
-            <NavItem eventKey={2} href="#">Link</NavItem>
-            <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-              <MenuItem eventKey={3.1}>Action</MenuItem>
-              <MenuItem eventKey={3.2}>Another action</MenuItem>
-              <MenuItem eventKey={3.3}>Something else here</MenuItem>
-              <MenuItem divider />
-              <MenuItem eventKey={3.4}>Separated link</MenuItem>
-            </NavDropdown>
+          <Nav pullRight>
+            <NavItem>About</NavItem>
+            <NavItem eventKey={2} href="#">Portfolio</NavItem>
+            <NavItem eventKey={2} href="#">Resume</NavItem>
           </Nav>
         </Navbar>
+
+        <Jumbotron>
+          <h1><small>When I ran bookstores, I always imagined living in a book.</small></h1>
+          <p>I just didn't realize that book would be <i>Cracking the Coding Interview</i>. My life as a web developer started with mastering Excel and Mediawiki for enhancing all my tabletop games; now I spend my time building apps to find me more books and lobbying Spotify to bring back artist location info in their API. I still love pivot tables.</p>
+          <p>When I'm not coding, you can find me touring Seattle's dog parks or concert venues. I'll be the one on the front row.</p>
+        </Jumbotron>
+      </Col>
+    </Row>
+  </Grid>
 
         <Content currentPage={this.state.currentPage} />
 

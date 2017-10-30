@@ -3,9 +3,8 @@
 
 .App {
   background-color: white;
-  width: 60%;
   margin: 0 auto;
-  height: 100vh;
+  text-align: justify !important;
 }
 
 .Home {
@@ -14,37 +13,16 @@
   display: inline-block;
   padding-right: 50px;
   text-align: justify;
-  border-radius: 50px;
-  border-top-right-radius: 0px;
   background-color: #B3D2FF;
-}
-
-.NavItem {
-  display: inline-block;
-  padding: 10px;
-  vertical-align: center;
-}
-
-h1 {
-  text-align: center;
-  font-size: 3em;
-  font-family: 'Dosis', sans-serif;
-}
-
-.image {
-  float: left;
-}
-
-h2 {
-  text-align: center;
-  font-size: larger;
-  font-family: 'Dosis', sans-serif;
 }
 
 .image {
   height: 50vh;
-  border-top-left-radius: 50px;
   margin-right: 10px;
+}
+
+.image {
+  float: left;
 }
 
 .Footer {
@@ -53,16 +31,20 @@ h2 {
   margin-right: 50px;
 }
 
-.nav {
-  margin: auto;
+.navbar {
+  margin-bottom: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
 }
 
-.nav section {
-  display: inline-block;
-  float: right;
+.container {
+  padding: 0px !important;
 }
 
-h1 {
-  display: inline-block;
-  float: left;
+.navbar-header {
+  padding-left: 15px !important;
+}
+
+.navbar-right {
+  padding-right: 15px !important;
 }

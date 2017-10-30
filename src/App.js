@@ -4,6 +4,7 @@ import './App.css';
 import Content from './components/Content.js';
 import Footer from './components/Footer.js';
 import NavItem from './components/NavItem.js';
+import { Navbar, Nav, NavDropdown, MenuItem } from 'react-bootstrap';
 
 class App extends Component {
   constructor() {
@@ -44,14 +45,25 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <div>
-          <h1><NavItem text='Jae Easley' onNavClick={this.onHomeClick} /></h1>
-          <section class='navlinks'>
-            <NavItem text='about' onNavClick={this.onAboutClick} /> | 
-            <NavItem text='portfolio' onNavClick={this.onPortfolioClick} /> | 
-            <NavItem text='resume' onNavClick={this.onResumeClick} />
-          </section>
-        </div>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
+        <Navbar>
+          <Navbar.Header>
+            <Navbar.Brand>
+              Jae Easley
+            </Navbar.Brand>
+          </Navbar.Header>
+          <Nav>
+            <NavItem eventKey={1} href="#">Link</NavItem>
+            <NavItem eventKey={2} href="#">Link</NavItem>
+            <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+              <MenuItem eventKey={3.1}>Action</MenuItem>
+              <MenuItem eventKey={3.2}>Another action</MenuItem>
+              <MenuItem eventKey={3.3}>Something else here</MenuItem>
+              <MenuItem divider />
+              <MenuItem eventKey={3.4}>Separated link</MenuItem>
+            </NavDropdown>
+          </Nav>
+        </Navbar>
 
         <Content currentPage={this.state.currentPage} />
 
